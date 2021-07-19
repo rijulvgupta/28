@@ -21,19 +21,19 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	mango1=new mango(1100,100,30);
-	mango2=new mango(1000,100,30);
-	mango3=new mango(1000,200,30);
-	mango4=new mango(1200,130,30);
-	mango5=new mango(1100,200,30);
-	mango6=new mango(1250,200,30);
-	mango7=new mango(900,200,30);
-	stone1=new stone(200,340,30);
+	mango1=new Mango(1100,100,30);
+	mango2=new Mango(1000,100,30);
+	mango3=new Mango(1000,200,30);
+	mango4=new Mango(1200,130,30);
+	mango5=new Mango(1100,200,30);
+	mango6=new Mango(1250,200,30);
+	mango7=new Mango(900,200,30);
+	stone1=new Stone(200,340,30);
 
 
 	treeObj=new tree(1050,580);
 	groundObject=new ground(width/2,600,width,20);
-	elastic1 = new elastic(stone1.body,{x:235,y:420});
+	elastic1 = new Elastic(stone1.body,{x:235,y:420});
 	
 	Engine.run(engine);
 
